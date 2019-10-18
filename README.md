@@ -1,5 +1,7 @@
 # ODB-Construction-Pano-Viewer
  A panoramic viewer for the Design Building construction panoramas
+ 
+ Link: https://alexschreyer.github.io/ODB-Construction-Pano-Viewer/
 
 This interactive viewer displays 360-degree panoramas of the Olver Design Building construction on the UMass Amherst campus. All images were taken in summer 2016 (Link: https://bct.eco.umass.edu/about-us/the-design-building-at-umass-amherst/design-building-virtual-construction-site-visit/).
 
