@@ -4,47 +4,20 @@
     <title>UMass Olver Design Building Construction Panoramas</title>
     <meta name="description" content="This interactive viewer displays 360-degree panoramas of the Olver Design Building construction on the UMass Amherst campus.">
     <meta name="keywords" content="UMass, Amherst, MassTimber, Olver, Design, Building">
+    <meta name="author" content="Alexander Schreyer, alexschreyer.net">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" type="text/css" href="viewer.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <style>
-      body { margin:0; padding:0; font-family: "Open Sans", Arial, sans-serif; font-size: calc(12px + 0.5vmin); color: white; background-color:rgba(58,68,84,1); }
-      h2 { width:100%; font-size: 1.5em; }
-      a { color:#fff; }
-      a:hover { text-decoration: none; }
-      .split { width: 100%; position: fixed; z-index: 1; left: 0; overflow: hidden; }
-      .top { top: 0; height: 10%; }
-      .bottom { top: 10%; height:90%; }
-      .centered { width:75%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
-      .location { font-weight:normal; font-size: 0.8em; opacity:0.6; margin-left:1em; transition: 0.2s; }
-      .location:hover { opacity:1; }
-      .button { font-size: 1em; font-weight:bold; padding:0.5em; text-align: center; background-color:rgba(255,255,255,0.25); opacity:0.6; transition: 0.2s; cursor:default; position: fixed; right:0; top: 0; z-index:999; }
-      .button:hover { opacity:1; }
-      .about { background-color: rgba(58,68,84,0.8); width:33vw; padding: 1em; z-index:999; box-shadow: 0 0 2em rgba(0, 0, 0, .6); transition: 0.2s; }
-      select { -moz-appearance: none; -webkit-appearance: none; appearance: none; border:1px solid rgba(58,68,84,1); border-bottom-color: #fff; padding:0.2em; color:#fff; background-color:rgba(58,68,84,1); font-size:inherit; }
-      select:hover { border-color: #fff; }
-      iframe { border:0; width:100%; height:100%; overflow:hidden; }
-
-      @media screen and (max-width:480px){
-        .top { top: 0; height: 20%; }
-        .bottom { top: 20%; height:80%; }
-        .about {width:66vw;}
-      }
-    </style>
-    <script type="text/javascript">
-      function toggleabout() {
-        var x = document.getElementById('aboutdialog');
-        if (x.style.display === 'none') { x.style.display = 'block'; } else { x.style.display = 'none'; }
-      }
-    </script>
+    <script src="viewer.js" type="text/javascript"></script>
   </head>
   <body>
 
@@ -52,11 +25,10 @@
   <div id="aboutdialog" class="about centered" style="display: none;" ><span class="button" onclick="toggleabout()">CLOSE</span>
     <h2>About</h2>
     <p>This interactive viewer displays 360-degree panoramas of the Olver Design Building construction on the UMass Amherst campus. All images were taken in summer 2016. <a href="https://bct.eco.umass.edu/about-us/the-design-building-at-umass-amherst/design-building-virtual-construction-site-visit/" target="_blank">More information...</a></p>
-    <p>You can select floors/locations at the top of the screen and individual panoramas using the menu at the left.</p>
-      <p>
-      Photos: &copy; 2016 <a href="https://alexschreyer.net/" target="_blank">Alexander C. Schreyer</a>, UMass Amherst<br />
-      Viewer Implementation: <a href="https://alexschreyer.net/" target="_blank">Alexander C. Schreyer</a><br />
-      360 Panorama Viewer: <a href="https://www.marzipano.net/" target="_blank">Marzipano</a>
+    <p>You can select floors/locations at the top of the screen and individual panoramas using the menu at the left. This viewer can also be installed as a web app by selecting "Add to Home Screen" from your browser menu.</p>
+    <p>Photos: &copy; 2016 <a href="https://alexschreyer.net/" target="_blank">Alexander C. Schreyer</a>, UMass Amherst<br />
+    Viewer Implementation: <a href="https://alexschreyer.net/" target="_blank">Alexander C. Schreyer</a><br />
+    360 Panorama Viewer: <a href="https://www.marzipano.net/" target="_blank">Marzipano</a>
     </p>
   </div>
 
