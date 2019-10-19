@@ -24,7 +24,7 @@
       .top { top: 0; height: 10%; }
       .bottom { top: 10%; height:90%; }
       .centered { width:75%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
-      .location { font-weight:normal; opacity:0.6; margin-left:1em; transition: 0.2s; }
+      .location { font-weight:normal; font-size: 0.8em; opacity:0.6; margin-left:1em; transition: 0.2s; }
       .location:hover { opacity:1; }
       .button { font-size: 1em; font-weight:bold; padding:0.5em; text-align: center; background-color:rgba(255,255,255,0.25); opacity:0.6; transition: 0.2s; cursor:default; position: fixed; right:0; top: 0; z-index:999; }
       .button:hover { opacity:1; }
@@ -62,7 +62,7 @@
 
   <div class="split top">
     <div class="centered">
-      <h2>UMass Olver Design Building Construction Panoramas <span class="location">Location:
+      <h2>UMass Olver Design Building Construction Panoramas<br /><span class="location">Location:
         <select name="viewers" onchange="document.getElementById('mainframe').src = this.options[this.selectedIndex].value" title="Select location set">
         <option value="exterior" selected>Exterior</option>
         <option value="basement">Basement</option>
